@@ -16,8 +16,8 @@ quiz = QuizBrain(question_bank)
 quiz_ui = QuizInterface(quiz)
 
 # This has to be commented out because there is a while loop in the ui.py file. You cannot have multiple while loops that are close together.
-# while quiz.still_has_questions():
-#     quiz.next_question()
+while quiz.still_has_questions():
+    quiz.next_question()
 
 print("You've completed the quiz")
 print(f"Your final score was: {quiz.score}/{quiz.question_number}")
